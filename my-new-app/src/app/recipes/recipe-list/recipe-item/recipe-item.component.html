@@ -1,1 +1,21 @@
-<p>recipe-item works!</p>
+<a href="#" 
+    (click)="onSelected()"
+    class="list-group-item clearfix"
+    style="position: relative;"
+    mousOverPopUp>
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+        <p class="list-group-item-text">{{ recipe.description }}</p>
+    </div>
+    <span class="pull-right">
+        <!-- <img src="{{ recipe.imagePath }}" string intepolation-->
+        <!-- or atribute property -->
+        <img [src]="recipe.imagePath"    
+            alt="{{ recipe.name }}" 
+            class="img-responsive" style="max-height: 50px;">
+    </span>
+    <div class="popup">
+        <p>This is a <strong>{{ recipe.name }}</strong></p>
+        <p>Click and view engredients.</p>
+    </div>
+</a>

@@ -7,7 +7,7 @@
 //     this.amount = amount;
 //   }
 // }
-/*This is the shorer version.....*/
+/*This is the shorter version.....*/
 export class Ingredient {
 
   constructor(public name: string, public amount: number) {}

@@ -1,0 +1,16 @@
+.popup {
+    display: none;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 7px 7px 23px 6px rgba(51,51,51,0.2);
+-moz-box-shadow: 7px 7px 23px 6px rgba(51,51,51,0.2);
+box-shadow: 7px 7px 23px 6px rgba(51,51,51,0.2);
+}
+.open .popup {
+    display: block;
+}
