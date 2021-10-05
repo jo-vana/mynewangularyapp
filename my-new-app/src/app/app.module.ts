@@ -11,6 +11,7 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { MouseOverPopup } from './shared/popup.directive';
+import { ShopingListService } from './shopping-list/shoping-list.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { MouseOverPopup } from './shared/popup.directive';
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [ShopingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
