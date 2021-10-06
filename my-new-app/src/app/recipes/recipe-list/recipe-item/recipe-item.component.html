@@ -8,14 +8,14 @@
         <p class="list-group-item-text">{{ recipe.description }}</p>
     </div>
     <span class="pull-right">
-        <!-- <img src="{{ recipe.imagePath }}" string intepolation-->
-        <!-- or atribute property -->
+        <!-- <img src="{{ recipe.imagePath }}" :string intepolation-->
+        <!-- or: atribute property -->
         <img [src]="recipe.imagePath"    
             alt="{{ recipe.name }}" 
             class="img-responsive" style="max-height: 50px;">
     </span>
     <div class="popup">
         <p>This is a <strong>{{ recipe.name }}</strong></p>
-        <p>Click and view engredients.</p>
+        <p>Click and view ingredients.</p>
     </div>
 </a>
